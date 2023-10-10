@@ -1,0 +1,299 @@
+<html lang="en"><head>
+    <title>Data Collection with Pupil Invisible</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-theme-l1">Step-by-Step Guide</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Topics</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#start-equipment">1. Start Equipment</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#check-your-device">2. Check Your Device</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#meet-your-participant">3. Meet Your Participant</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#calibration">4. Calibration</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#record-and-save">5. Record and Save</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#upload">6. Upload</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#troubleshoot">7. Troubleshoot</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#collect-survey-data"><strong>8. Collect Survey Data</strong></a>
+    </nav>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+    
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal"></h1>
+          <h4>Hello, and thank you for your assistance in collecting this data!</h4>
+          <h4>In this document, we will provide a step-by-step guide on how to create a recording using the pupil invisible device, followed by a guide on how to collect survey data.</h4>
+        </div>
+      </div>
+    
+      <div class="w3-row w3-padding-64"  id="start-equipment">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">1. Start Equipment</h1>
+          <p>Please ensure you have received the following items for this data collection:</p>
+            <p style="margin-left: 25px;">1. A mobile phone</p>
+            <p style="margin-left: 25px;">2. One pair of glasses</p>
+            <p style="margin-left: 25px;">3. A USB-C cable</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="./screenshots/Pupil_Invisible-with-companion.jpg" width="300"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+      </div>
+    
+      <div class="w3-row w3-padding-64" id="check-your-device">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">2. Check Your Device</h1>
+          <p style="margin-left: 25px;">Start by turning on the phone and swiping to unlock. If prompted for a password, enter '1234'.</p>
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Check the phone's battery level. If it's below the minimum required percentage (30%), please take it to the charging station.</p>
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Open the 'Invisible Companion App' on the phone. You can identify the app by its icon, which looks like this:</p>
+          <img style="margin-left: 25px;" src="./screenshots/applogo.png" width="100"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Check the remaining storage by tapping the '(i)' icon on the top right within the 'Invisible Companion' app. If the available storage is less than the minimum required free space (20 GB), please inform one of the coordinators.</p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/remaining-storage.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Ensure you are logged into the correct workspace. Refer to the screenshot below to confirm the name of the workspace.</p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/workspace-check.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Open settings from the left bottom corner and adjust exposure value according to room lighting.</p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/exposure.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">You can open the preview window from the bottom right corner to check if the exposure value matches the room lighting.</p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/preview-button.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">From settings, toggle Cloud Upload on so recordings are uploaded automatically to the cloud after being saved. </p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/cloudON.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 25px;">Connect the glasses to the phone using the USB-C cable. On the app's home screen, check that the scene and eye camera icons are colored, indicating successful connection (they would appear gray if not connected).</p>
+        </div>
+
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/cable-connected.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+      </div>
+    
+      <div class="w3-row w3-padding-64" id="meet-your-participant">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">3. Meet Your Participant</h1>
+          <p style="margin-left: 25px;">Create a new wearer profile and name it as 'D[device number]-P[participant number].' For instance, if you're using device number 1 and collecting data from your third participant, wearer name should be 'D01-P003'.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/wearer-name.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+      <div class="w3-row w3-padding-64" id="calibration">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">4. Calibration</h1>
+          <p style="margin-left: 25px;">To view a live stream of the scene video with a gaze overlay, click the 'Preview' button. In this tab, you will need to calibrate the gaze overlay for each participant. To do this, follow these steps:</p>
+          <p style="margin-left: 50px;">a. Ask the participant to focus on a specific point on the calibration board.</p>
+          <p style="margin-left: 50px;">b. Place your finger on the screen and adjust its position so that the red circle aligns with where the participant is looking.</p>
+          <p style="margin-left: 50px;">c. Once aligned, apply the changes.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/preview-button.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="record-and-save">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">5. Record and Save</h1>
+          <p style="margin-left: 25px;">You can now begin recording:</p>
+          <p style="margin-left: 50px;">Press the large red button to start the recording.</p>
+          <p style="margin-left: 50px;">Lock the screen and give the phone to the participant to hold in their hand or place it in their pocket.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/start-button.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 50px;">After the participant has completed their visit from the museum, unlock the phone. Press the red square to stop the recording.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/recording-inprogress-stop-button.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+        <div class="w3-twothird w3-container">
+          <p style="margin-left: 50px;">Select 'Save' to save the recording.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/save-recording.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+
+      </div>
+
+      <div class="w3-row w3-padding-64" id="upload">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">6. Upload</h1>
+          <p style="margin-left: 25px;">You can monitor the upload progress of the recording in the 'Recordings' section located in the bottom left corner of the app's home page.</p>
+        </div>
+        <div class="w3-third w3-container">
+          <img style="margin-left: 25px;" src="./screenshots/recording-uploading.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+          <img style="margin-left: 25px;" src="./screenshots/upload-done.jpg" width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="troubleshoot">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">7. Troubleshoot</h1>
+          <h3>a. Troubleshooting Errors During Recording and Saving:</h3>
+          <p>During the recording and saving process, you may encounter errors. Here are some common issues and steps to resolve them:</p>
+          <p style="margin-left: 25px;"><strong>Continuous Vibration:</strong> If the phone continues to vibrate without stopping, it indicates an error in either the recording or saving process. While a few initial vibrations are normal, they should stop after a few seconds.</p>
+          <p style="margin-left: 25px;"><strong>Blinking Red Light on Glasses:</strong> If the participant notices a blinking red light on the sides of the glasses, near the eye camera, it indicates an error in either the recording or saving process.</p>
+          <p style="margin-left: 25px;"></p>
+          <p>Possible Error Messages:</p>
+          <p>If you encounter an error message, it might be one of the following:</p>
+          <p style="margin-left: 25px;"><strong>Sensor failure (World Camera):</strong> The world camera has stopped providing data.</p>
+          <p style="margin-left: 25px;"><strong>Sensor failure (Inertial Measurement Unit):</strong> The Inertial Measurement Unit has stopped providing data.</p>
+          <p style="margin-left: 25px;"><strong>Recording failure:</strong>The Pupil Invisible Companion App stopped working during the current recording.</p>
+          <p style="margin-left: 25px;">Please follow these steps:</p>
+          <p style="margin-left: 50px;">1. Stop the recording.</p>
+          <p style="margin-left: 50px;">2. Unplug the USB from your Pupil Invisible Glasses.</p>
+          <p style="margin-left: 50px;">3. Plug it back in.</p>
+          <p>If the error occurs at the beginning of the recording, discard the recording and make a new one.</p>
+          <p>If the error occurs later in the recording, save the current data and then start a new recording.</p>
+          <p><strong>App Crash:</strong></p>
+          <p>If the app crashes and you couldn't save the data, try restarting the phone. Here's how:</p>
+          <p style="margin-left: 25px;">1. Press and hold the Power button (right edge) and Volume up button (left edge) until the 'Power off' prompt appears, then release.</p>
+          <p style="margin-left: 25px;">2. Tap 'Restart'.</p>
+          <p style="margin-left: 25px;">3. Allow up to 30 seconds for the reset to complete.</p>
+          <p style="margin-left: 25px;">4. If your device doesn't power back on, partially charge it and then retry.</p>
+          <h3>b. Troubleshooting Errors Uploading:</h3>
+          <p>If the recording isn't uploading, please ensure that you are connected to the internet and that the cloud upload setting is turned on. If the issue persists, try logging out and then back in within the app.</p>
+          <p></p>
+          <h3>c. Additional Considerations:</h3>
+          <p>The IMU on the right side of the glasses may become warm after a few minutes of recording. To ensure that the data is stored and uploaded correctly, it's recommended to keep recording sessions under 15 minutes and allow a couple of minutes in between for the device to cool down. You can also take this time to recharge the battery, as the recording process can drain it.</p>
+        </div>
+      </div>
+
+      <div div class="w3-row w3-padding-64" id="collect-survey-data">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">8. Collect Survey Data</h1>
+          <p style="margin-left: 25px;">1. Using the tablet provided, open this link:</p>
+          <a style="margin-left: 25px;" href="https://forms.office.com/r/Mk3yvqhq7M">https://forms.office.com/r/Mk3yvqhq7M</a>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="./screenshots/QRCode for O'QUE VOCÊ SENTIU AO VISITAR OS TRÊS CUBOS_.png"  width="250"  class="w3-border w3-padding-large w3-padding-32 w3-center">
+        </div>
+        <div class="w3-third w3-container">
+          <p style="margin-left: 25px;">2. Hold the tablet horizontally.</p>
+          <p style="margin-left: 25px;">3. In the first section, please enter the participant ID that corresponds to the eye-tracking part. The participant ID should follow the format "D[device number]-P[participant number]." For example, if the participant's device number was 1 and they were the third participant, the participant ID should be 'D01-P003.'</p>
+          <p style="margin-left: 25px;">4. Next, pass the tablet to the participant and instruct them to complete the survey.</p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <!-- <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-black" href="#">1</a>
+          <a class="w3-button w3-hover-black" href="#">2</a>
+          <a class="w3-button w3-hover-black" href="#">3</a>
+          <a class="w3-button w3-hover-black" href="#">4</a>
+          <a class="w3-button w3-hover-black" href="#">5</a>
+          <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+      </div> -->
+    
+      <!-- <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+          <h4>Footer</h4>
+        </div>
+    
+        <div class="w3-container w3-theme-l1">
+          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+      </footer> -->
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
+    
+    
+    </body></html>
